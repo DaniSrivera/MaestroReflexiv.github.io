@@ -1,49 +1,70 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    font-family: "Arial", sans-serif;
     margin: 0;
+    padding: 0;
+    background-color: #f39c12; /* Fondo amarillo */
+    color: #34495e; /* Color de texto azul oscuro */
 }
 
-.menu ul {
+header {
+    background-color: #3498db; /* Fondo azul claro */
+    color: #fff; /* Color de texto blanco */
+    text-align: center;
+    padding: 2rem;
+}
+
+.titulo-grande {
+    font-size: 2.5rem; /* Tamaño de letra grande */
+}
+
+nav {
+    background-color: #f39c12; /* Fondo amarillo */
+    color: #fff; /* Color de texto blanco */
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transform-origin: center;
-    transform: rotate(0deg);
-    transition: transform 0.5s;
 }
 
-.menu ul.show-categories {
-    transform: rotate(90deg);
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-.menu li {
-    margin: 10px;
-}
-
-.menu a {
+nav a {
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    color: #34495e; /* Color de texto azul oscuro */
+    font-size: 1.5rem; /* Tamaño de letra grande */
 }
 
-button {
-    margin-bottom: 10px;
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-p {
+section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e74c3c; /* Fondo rojo */
+    color: #fff; /* Color de texto blanco */
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 2rem; /* Tamaño de letra grande */
+}
+
+footer {
+    background-color: #34495e; /* Fondo azul oscuro */
+    color: #fff; /* Color de texto blanco */
     text-align: center;
-    font-size: 18px;
-    margin: 20px;
-    display: none;
+    padding: 1rem;
 }
 
-.menu ul.show-categories + p {
-    display: block;
+.texto-blanco {
+    color: #fff; /* Color de texto blanco */
 }
