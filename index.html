@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <button onclick="toggleCategories()">Mostrar Categorías</button>
+        <ul>
+            <li><a href="#">Categoría 1</a></li>
+            <li><a href="#">Categoría 2</a></li>
+            <li><a href="#">Categoría 3</a></li>
+            <!-- Agrega más elementos de lista según sea necesario -->
+        </ul>
+    </div>
+    <p id="categoryText">Este es el texto que se mostrará u ocultará cuando hagas clic en el botón.</p>
+    
+    <script>
+        function toggleCategories() {
+            var ul = document.querySelector(".menu ul");
+            ul.classList.toggle("show-categories");
+
+            var categoryText = document.getElementById("categoryText");
+            categoryText.style.display = ul.classList.contains("show-categories") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
