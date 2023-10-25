@@ -3,29 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Página Web de Práctica Docente</title>
 </head>
 <body>
-    <div class="menu">
-        <button onclick="toggleCategories()">Mostrar Categorías</button>
+    <header>
+        <h1 class="titulo-grande">Bienvenido a la Práctica Docente</h1>
+    </header>
+    <nav>
         <ul>
-            <li><a href="#">Categoría 1</a></li>
-            <li><a href="#">Categoría 2</a></li>
-            <li><a href="#">Categoría 3</a></li>
-            <!-- Agrega más elementos de lista según sea necesario -->
+            <li><a href="#reflexion">Reflexión sobre la Práctica</a></li>
+            <li><a href="#nuevaescuela">Nueva Escuela Mexicana</a></li>
+            <li><a href="#trayectos">Trayectos Formativos</a></li>
         </ul>
-    </div>
-    <p id="categoryText">Este es el texto que se mostrará u ocultará cuando hagas clic en el botón.</p>
-    
-    <script>
-        function toggleCategories() {
-            var ul = document.querySelector(".menu ul");
-            ul.classList.toggle("show-categories");
-
-            var categoryText = document.getElementById("categoryText");
-            categoryText.style.display = ul.classList.contains("show-categories") ? "block" : "none";
-        }
-    </script>
+    </nav>
+    <main>
+        <section id="reflexion">
+            <h2>Reflexión sobre la Práctica</h2>
+            <p>Aquí puedes encontrar reflexiones sobre tu práctica docente.</p>
+        </section>
+        <section id="nuevaescuela">
+            <h2>Nueva Escuela Mexicana</h2>
+            <p>Explora la nueva visión de la escuela en México.</p>
+        </section>
+        <section id="trayectos">
+            <h2>Trayectos Formativos</h2>
+            <p>Descubre los trayectos formativos disponibles para tu desarrollo profesional.</p>
+        </section>
+    </main>
+    <footer>
+        <p class="texto-blanco">Derechos de autor © 2023 Tu Nombre</p>
+    </footer>
 </body>
 </html>
